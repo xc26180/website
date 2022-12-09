@@ -1,0 +1,30 @@
+{% extends 'data.html' %}
+{% block content %}
+<form action="/" method="post">
+    <table border="1">
+        <tr>
+            <th>Category</th>
+            <th>Descriptions</th>
+            <th>Price</th>
+            <th>Code</th>
+        </tr>
+        <ul>
+            {% for item in data %}
+            <tr>
+                <th>{{item[0]}}</th>
+                <th>{{item[1]}}</th>
+                <th>${{item[2]}}</th>
+                <th>{{item[3]}}</th>
+            </tr>
+            {% endfor %}    
+        </ul>
+    </table>
+    
+    <a href="http://127.0.0.1:8060/"> 
+    <input type="submit" value="Ok"/>
+</form>
+
+
+
+
+{% endblock content %}

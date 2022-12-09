@@ -1,0 +1,13 @@
+{% extends 'data.html' %}
+{% block content %}
+
+<ul>
+{% for item in data %}
+<li>{{item.Category}},{{item.Descriptions}},{{item.Price}},{{item.Code}}</li>
+{% endfor %}    
+</ul>
+
+
+
+
+{% endblock content %}

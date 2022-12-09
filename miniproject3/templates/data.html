@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Product Management System</title>
+    </head>
+    <body>
+        
+     
+        {% block content %}
+
+        <h1>Product Management System</h1> 
+        <h2>Enter Product Data</h2>
+        <form action="/result" method="post">
+            Product Category: <input name = "Category" required type="text"/><br>
+            Product Description: <input name = "Descriptions" required type="text"/><br>
+            Price: <input name = "Price" required type="integer"/><br>
+            Product code: <input name = "Code" required type="text"/><br>
+            <input type="submit"/>
+        </form>
+
+        {% endblock content %}
+
+    </body>
+</html>
